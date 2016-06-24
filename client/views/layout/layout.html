@@ -5,10 +5,10 @@
 	</title>
 </head>
 <template name="layout">
-	{{> FreeLayout freeData}}
+	{{> Layout Data}}
 </template>
 
-<template name="FreeLayout">
+<template name="Layout">
 	<div id="content" class="sticky-wrapper">
 		<div id="navbar" class="navbar navbar-fixed-top navbar-default" role="navigation">
 			<div class="navbar-container container">
@@ -24,8 +24,8 @@
 						<span class="icon-bar">
 						</span>
 					</button>
-					<a class="navbar-brand" href="#">
-						Dataview Dashboard
+					<a class="navbar-brand" href="{{pathFor 'home'}}">
+						ILCT Logistics Ltd.
 					</a>
 				</div>
 				<div id="menu" class="collapse navbar-collapse">
@@ -57,7 +57,7 @@
 		<li id="menu-item-simple" class="{{menuItemClass 'customers'}}">
 			<a href="{{pathFor 'customers'}}">
 				<span class="item-title">
-					Customers
+					Clients
 				</span>
 			</a>
 		</li>

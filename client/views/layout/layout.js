@@ -45,7 +45,7 @@ Template.layout.events({
 });
 
 Template.layout.helpers({ 
-	"freeData": function() {
+	"Data": function() {
 		return {
 			params: this.params || {}
 		};
@@ -53,7 +53,7 @@ Template.layout.helpers({
 	}
 });
 
-Template.FreeLayout.onCreated(function() {
+Template.Layout.onCreated(function() {
 	var subs = [
 		];
 });
